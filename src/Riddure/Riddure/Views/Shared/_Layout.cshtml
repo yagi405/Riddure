@@ -9,5 +9,11 @@
     <div>
         @RenderBody()
     </div>
+    <environment include="Development">
+        <script type="text/javascript" src="~/lib/vue/vue.global.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script type="text/javascript" src="~/lib/vue/vue.global.prod.js" asp-append-version="true"></script>
+    </environment>
 </body>
 </html>
