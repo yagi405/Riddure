@@ -4,6 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <environment include="Development">
+        <link rel="stylesheet" type="text/css" href="~/lib/bulma/css/bulma.css" asp-append-version="true" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="~/lib/bulma/css/bulma.min.css" asp-append-version="true" />
+    </environment>
 </head>
 <body>
     <div>
