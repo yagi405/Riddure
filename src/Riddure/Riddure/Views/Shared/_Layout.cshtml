@@ -15,5 +15,6 @@
     <environment exclude="Development">
         <script type="text/javascript" src="~/lib/vue/vue.global.prod.js" asp-append-version="true"></script>
     </environment>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
